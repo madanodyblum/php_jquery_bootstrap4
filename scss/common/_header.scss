@@ -1,0 +1,58 @@
+.header{
+    .navbar{
+        height: 105px;
+        padding: 0;
+        .navbar-brand{
+            margin: 0;
+            padding: 0;
+        }
+        .call_enquiry{
+            p {
+                font-size: 24px;
+                color:$charade_black;
+                line-height: 22px;
+                font-family: $black-font;
+                margin-bottom:10px;
+                &:last-child{
+                    color: $pictonblue_clr;
+                }
+            }
+        }
+    }
+
+    @include desktop-1399 {
+        .navbar{
+            height: 70px;
+            .call_enquiry {
+                p {
+                    font-size: 16px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .navbar{
+            .call_enquiry {
+                p {
+                    font-size: 14px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .navbar{
+            .container {
+                justify-content: center;
+            }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        .navbar {
+            .call_enquiry {
+                display: none;
+            }
+        }
+    }
+}

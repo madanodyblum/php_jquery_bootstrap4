@@ -1,0 +1,30 @@
+// Colors
+$black                  : #000000;
+$white                  : #ffffff;
+$charade_black          : #232331;
+$matisse_clr            : #1A5C99;
+$pictonblue_clr         : #4CB8E0;
+$porcelain_clr          : #F8FAFA;
+
+
+// link
+$imageurl       :  "../images";
+$fonturl        :  "../fonts";
+
+// font
+$regular-font   : 'Lato-Regular';
+$black-font : 'Lato-Black';
+
+//Grid
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1200px
+) !default;
+
+@include font-face($regular-font, '#{$fonturl}/Lato-Regular', 'normal', 'normal');
+@include font-face($black-font, '#{$fonturl}/Lato-Black', 'normal', 'normal');
+  
+
